@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Vasen käännös',
+  title: 'Aaro Heroja',
   author: 'Aaro Heroja',
-  headerTitle: 'Vasen käännös',
-  description: 'Jälkiviisautta risteyksien jälkeen, missä on käännytty vasemmalle. ',
+  headerTitle: 'Aaro Heroja',
+  description: 'Ajatuksia matkalta kauas',
   language: 'fi-fi',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
@@ -11,8 +11,9 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'aaro@aaroheroja.fi',
-  github: 'https://github.com/Aromiii',
+  instagram: 'https://www.instagram.com/aaro.heroja/',
   linkedin: 'https://www.linkedin.com/in/aaro-heroja/',
+  github: 'https://github.com/Aromiii',
   locale: 'fi-FI',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

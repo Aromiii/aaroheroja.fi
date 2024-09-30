@@ -1,6 +1,4 @@
 import { CV } from '../types/cv'
-import fieldTypes from 'rehype-citation/node/src/citation-js/plugin-bibtex/input/fieldTypes'
-import title = fieldTypes.title
 
 const cvData: CV = {
   education: [
@@ -65,6 +63,7 @@ const cvData: CV = {
         {
           title: 'Brändimestari | HuHu24',
           startDate: new Date(2023, 10),
+          endDate: new Date(2024, 8),
         },
       ],
     },
@@ -120,17 +119,6 @@ const cvData: CV = {
         {
           title: 'Viestintä ja markkinointijohtaja',
           startDate: new Date(2022, 11),
-          skills: [
-            'Markkinointistrategia',
-            'Johtaminen',
-            'Viestintä',
-            'Johtaminen',
-            'Viestintä',
-            'Johtaminen',
-            'Viestintä',
-            'Johtaminen',
-            'Viestintä',
-          ],
         },
         {
           title: 'Ryhmänjohtaja',
@@ -144,11 +132,18 @@ const cvData: CV = {
         {
           title: 'Oppilaskunnan hallituksen jäsen',
           startDate: new Date(2024, 1),
+          endDate: new Date(2024, 9),
         },
       ],
     },
   ],
   coursesLicensesAndCertifications: [
+    {
+      title: 'Y-trainee kurssi',
+      issueDate: new Date(2024, 6),
+      issuerName: 'Suomen Partiolaiset - Finlands Scouter ry',
+      issuerLogo: '/static/images/partio_sp.svg',
+    },
     {
       title: 'PSK 6803 Työturvallisuus',
       issueDate: new Date(2024, 5),
@@ -156,17 +151,17 @@ const cvData: CV = {
       issuerLogo: '/static/images/verkkokoulu.jpg',
     },
     {
-      title: 'Young spokespeople -kurssi',
-      issuerName: 'Suomen Partiolaiset - Finlands Scouter ry',
-      issueDate: new Date(2023, 1),
-      issuerLogo: '/static/images/partio_sp.svg',
-    },
-    {
       title: 'Ryhmänohjaajakoulutus',
       issueDate: new Date(2023, 3),
       issuerName: 'Hyvinkään Nummenpojat ry',
       issuerLogo:
         'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnummenpojat.fi%2Fwp-content%2Fuploads%2F2023%2F03%2Fcropped-HN-reunaton-logo-png.png&f=1&nofb=1&ipt=b2f1004c1317e68be4f4060b38526d2360cb4502b74af455b179af87672741f5&ipo=images',
+    },
+    {
+      title: 'Young spokespeople -kurssi',
+      issuerName: 'Suomen Partiolaiset - Finlands Scouter ry',
+      issueDate: new Date(2023, 1),
+      issuerLogo: '/static/images/partio_sp.svg',
     },
     {
       title: 'Turvallisesti yhdessä -verkkokurssi',
