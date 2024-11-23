@@ -29,20 +29,29 @@ const cvData: CV = {
         {
           title: 'Vaalitoimikunnan jäsen',
           startDate: new Date(2024, 3),
+          timeSpentPerMonth: 12,
+        },
+        {
+          title: 'Y-trainee projektiryhmän jäsen',
+          startDate: new Date(2024, 3),
+          timeSpentPerMonth: 2,
         },
         {
           title: 'Digiryhmän jäsen',
           startDate: new Date(2023, 11),
+          timeSpentPerMonth: 2,
         },
         {
           title: 'Sovelluskehittäjäexpertti | Explo 2023',
           startDate: new Date(2023, 3),
           endDate: new Date(2024, 10),
+          timeSpentPerMonth: 3,
         },
         {
           title: 'Sisällöntuottaja | Johtajatulet 2023',
           startDate: new Date(2023, 4),
           endDate: new Date(2023, 8),
+          timeSpentPerMonth: 4,
         },
       ],
     },
@@ -53,6 +62,7 @@ const cvData: CV = {
         {
           title: 'Projektipäällikkö | Riippari-sovellus',
           startDate: new Date(2024, 4),
+          timeSpentPerMonth: 3,
         },
       ],
     },
@@ -61,9 +71,11 @@ const cvData: CV = {
       companyLogoImgSrc: '/static/images/partio_lsp.jpg',
       positions: [
         {
-          title: 'Brändimestari | HuHu24',
+          title: 'Brändi- ja viestintämestari | HuHu 2024',
           startDate: new Date(2023, 10),
           endDate: new Date(2024, 8),
+          timeSpentPerMonth: 10,
+          description: 'Pesti vastaa päällikkötasoa L-SP:n pestijärjetelmän eroavuuden takia.',
         },
       ],
     },
@@ -74,6 +86,7 @@ const cvData: CV = {
         {
           title: 'Webmaster | Orbis2025',
           startDate: new Date(2024, 3),
+          timeSpentPerMonth: 5,
         },
       ],
     },
@@ -82,8 +95,9 @@ const cvData: CV = {
       companyLogoImgSrc: '/static/images/partio_papa.jpg',
       positions: [
         {
-          title: 'Analytiikkamestari | Kimara2024',
+          title: 'Analytiikkamestari | Kimara 2024',
           startDate: new Date(2023, 11),
+          timeSpentPerMonth: 3,
         },
       ],
     },
@@ -92,13 +106,20 @@ const cvData: CV = {
       companyLogoImgSrc: 'https://uusimaa.kuvat.fi/kansiot/LOGOT/Kokkalogo.png?img=smaller',
       positions: [
         {
+          title: 'Brändi- ja verkkosivupäällikkö | Hanki palaa -25 talvi-SM kisat',
+          startDate: new Date(2024, 7),
+          timeSpentPerMonth: 2,
+        },
+        {
           title: 'Hautomon jäsen',
           startDate: new Date(2022, 10),
+          timeSpentPerMonth: 4,
         },
         {
           title: 'Viestintä ja markkinointiryhmän jäsen',
           startDate: new Date(2022, 12),
           endDate: new Date(2023, 10),
+          timeSpentPerMonth: 3,
         },
       ],
     },
@@ -111,18 +132,28 @@ const cvData: CV = {
           title: 'Retkenjohtaja | TaSaVa 14',
           startDate: new Date(2023, 8),
           endDate: new Date(2023, 10),
+          timeSpentPerMonth: 15,
         },
         {
           title: 'Hallituksen jäsen, Viestintä ja markkinointi',
           startDate: new Date(2023, 1),
+          timeSpentPerMonth: 3,
         },
         {
           title: 'Viestintä ja markkinointijohtaja',
           startDate: new Date(2022, 11),
+          timeSpentPerMonth: 6,
         },
         {
           title: 'Ryhmänjohtaja',
           startDate: new Date(2022, 9),
+          timeSpentPerMonth: 10,
+        },
+        {
+          title: 'Digikehittäjä',
+          startDate: new Date(2022, 4),
+          endDate: new Date(2022, 10),
+          timeSpentPerMonth: 4,
         },
       ],
     },
@@ -133,6 +164,7 @@ const cvData: CV = {
           title: 'Oppilaskunnan hallituksen jäsen',
           startDate: new Date(2024, 1),
           endDate: new Date(2024, 9),
+          timeSpentPerMonth: 6,
         },
       ],
     },

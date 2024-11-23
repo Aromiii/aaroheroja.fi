@@ -16,6 +16,12 @@ export interface Experience {
     startDate: Date
     endDate?: Date
     skills?: string[]
+    description?: string
+    timeSpentPerMonth?: number
+    supervisor?: {
+      name: string
+      email?: string
+    }
   }[]
 }
 

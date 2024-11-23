@@ -56,6 +56,11 @@ const ListElement = (props: { data: Education | Experience | CourseLicenseOrCert
             />
             <h3 className="text-md font-bold leading-8 tracking-tight">{data.company}</h3>
           </div>
+          {data.description && (
+            <p className="prose mb-3 ml-12 max-w-none text-gray-500 dark:text-gray-400">
+              {data.description}
+            </p>
+          )}
           {data.positions.map((position, index) => (
             <div key={position.title} className="relative mb-3 flex h-full place-items-center">
               <div className="absolute top-6 mx-3 h-full w-3">
@@ -74,20 +79,39 @@ const ListElement = (props: { data: Education | Experience | CourseLicenseOrCert
                 <h4 className="mb-0.5 text-xl font-bold leading-8 tracking-tight">
                   {position.title}
                 </h4>
-                <p className="prose mb-0.5 max-w-none text-gray-500 dark:text-gray-400">
+                <p className="prosemax-w-none text-gray-500 dark:text-gray-400">
                   {position.startDate.toDateString()} - {position.endDate?.toDateString() || 'Nyt'}
                 </p>
                 {position.skills && (
-                  <p className="mb- prose max-w-none text-gray-500 dark:text-gray-400">
+                  <p className="prose max-w-none text-gray-500 dark:text-gray-400">
                     Taidot: {position.skills.join(', ')}
+                  </p>
+                )}
+                {position.timeSpentPerMonth && (
+                  <p className="prose max-w-none text-gray-500 dark:text-gray-400">
+                    Ajankäyttö kuukaudessa: {position.timeSpentPerMonth}h
+                  </p>
+                )}
+                {position.supervisor && (
+                  <p className="prose max-w-none text-gray-500 dark:text-gray-400">
+                    Esihenkilö: {position.supervisor.name},{' '}
+                    {position.supervisor.email ? (
+                      <Link href={`mailto:${position.supervisor.email}`}>
+                        {position.supervisor.email}
+                      </Link>
+                    ) : (
+                      ''
+                    )}
+                  </p>
+                )}
+                {position.description && (
+                  <p className="prose mt-1 max-w-none text-gray-500 dark:text-gray-400">
+                    {position.description}
                   </p>
                 )}
               </div>
             </div>
           ))}
-          {data.description && (
-            <p className="prose max-w-none text-gray-500 dark:text-gray-400">{data.description}</p>
-          )}
         </>
       )}
       {isCourseLicenseOrCertification(data) && (
