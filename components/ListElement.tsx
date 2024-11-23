@@ -1,5 +1,5 @@
 import Link from './Link'
-import { Education, Experience, CourseLicenseOrCertification } from '../types/cv'
+import { CourseLicenseOrCertification, Education, Experience } from '../types/cv'
 
 // Type guard to check if data is Education
 const isEducation = (
@@ -36,8 +36,20 @@ const ListElement = (props: { data: Education | Experience | CourseLicenseOrCert
           <div>
             <h3 className="mb-2 text-xl font-bold leading-8 tracking-tight">{data.schoolName}</h3>
             <p className="prose max-w-none text-gray-500 dark:text-gray-400">{data.title}</p>
-            <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">
-              {data.startDate.toDateString()} - {data.endDate?.toDateString() || 'Nyt'}
+            <p className="prose max-w-none text-gray-500 dark:text-gray-400">
+              {data.startDate.toLocaleDateString('fi-FI', {
+                year: 'numeric',
+                month: 'long',
+              })}{' '}
+              -{' '}
+              {data.endDate
+                ? data.endDate.toLocaleDateString('fi-FI', {
+                    year: 'numeric',
+                    month: 'long',
+                  })
+                : 'Nyt'}
+              ,{' '}
+              {` ${Math.floor(((data.endDate || new Date()) - data.startDate) / (1000 * 60 * 60 * 24 * 30.4375)) + 1} kk`}
             </p>
             {data.skills && (
               <p className="prose max-w-none text-gray-500 dark:text-gray-400">
@@ -79,8 +91,20 @@ const ListElement = (props: { data: Education | Experience | CourseLicenseOrCert
                 <h4 className="mb-0.5 text-xl font-bold leading-8 tracking-tight">
                   {position.title}
                 </h4>
-                <p className="prosemax-w-none text-gray-500 dark:text-gray-400">
-                  {position.startDate.toDateString()} - {position.endDate?.toDateString() || 'Nyt'}
+                <p className="prose max-w-none text-gray-500 dark:text-gray-400">
+                  {position.startDate.toLocaleDateString('fi-FI', {
+                    year: 'numeric',
+                    month: 'long',
+                  })}{' '}
+                  -{' '}
+                  {position.endDate
+                    ? position.endDate.toLocaleDateString('fi-FI', {
+                        year: 'numeric',
+                        month: 'long',
+                      })
+                    : 'Nyt'}
+                  ,{' '}
+                  {` ${Math.floor(((position.endDate || new Date()) - position.startDate) / (1000 * 60 * 60 * 24 * 30.4375)) + 1} kk`}
                 </p>
                 {position.skills && (
                   <p className="prose max-w-none text-gray-500 dark:text-gray-400">
@@ -124,7 +148,7 @@ const ListElement = (props: { data: Education | Experience | CourseLicenseOrCert
             <h3 className="text-xl font-bold leading-8 tracking-tight">{data.title}</h3>
             <p className="prose max-w-none text-gray-500 dark:text-gray-400">{data.issuerName}</p>
             <p className="prose max-w-none text-gray-500 dark:text-gray-400">
-              {data.issueDate.toDateString()}
+              {data.issueDate.toLocaleDateString('fi-FI', { year: 'numeric', month: 'long' })}
             </p>
             {data.skills && (
               <p className="prose max-w-none text-gray-500 dark:text-gray-400">

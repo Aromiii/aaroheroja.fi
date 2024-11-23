@@ -5,7 +5,7 @@ const cvData: CV = {
     {
       schoolName: 'Hyvinkään lukio - Kipinä',
       title: 'Ylioppilastutkinto',
-      startDate: new Date(2023, 8),
+      startDate: new Date(2023, 7),
     },
   ],
   experience: [
@@ -97,6 +97,7 @@ const cvData: CV = {
         {
           title: 'Analytiikkamestari | Kimara 2024',
           startDate: new Date(2023, 11),
+          endDate: new Date(2023, 8),
           timeSpentPerMonth: 3,
         },
       ],
