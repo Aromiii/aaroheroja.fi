@@ -13,10 +13,7 @@ export default function Page() {
   const mainContent = coreContent(author)
 
   return (
-    <>
-      <AuthorLayout content={mainContent}>
-        <MDXLayoutRenderer code={author.body.code} />
-      </AuthorLayout>
+    <div className="max-w-3xl xl:max-w-5xl">
       <div className="flex w-full flex-col place-items-center">
         <div className="max-w-[700px] place-items-center divide-y divide-gray-200 dark:divide-gray-700">
           <div className="space-y-2 pb-4 pt-6 md:space-y-5">
@@ -53,6 +50,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

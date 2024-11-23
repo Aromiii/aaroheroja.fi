@@ -49,7 +49,7 @@ const ListElement = (props: { data: Education | Experience | CourseLicenseOrCert
                   })
                 : 'Nyt'}
               ,{' '}
-              {` ${Math.floor(((data.endDate || new Date()) - data.startDate) / (1000 * 60 * 60 * 24 * 30.4375)) + 1} kk`}
+              {` ${Math.floor(((data.endDate?.getTime() || new Date().getTime()) - data.startDate.getTime()) / (1000 * 60 * 60 * 24 * 30.4375)) + 1} kk`}
             </p>
             {data.skills && (
               <p className="prose max-w-none text-gray-500 dark:text-gray-400">
@@ -104,7 +104,7 @@ const ListElement = (props: { data: Education | Experience | CourseLicenseOrCert
                       })
                     : 'Nyt'}
                   ,{' '}
-                  {` ${Math.floor(((position.endDate || new Date()) - position.startDate) / (1000 * 60 * 60 * 24 * 30.4375)) + 1} kk`}
+                  {` ${Math.floor(((position.endDate?.getTime() || new Date().getTime()) - position.startDate.getTime()) / (1000 * 60 * 60 * 24 * 30.4375)) + 1} kk`}
                 </p>
                 {position.skills && (
                   <p className="prose max-w-none text-gray-500 dark:text-gray-400">

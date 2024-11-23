@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Aaro Heroja',
   author: 'Aaro Heroja',
   headerTitle: 'Aaro Heroja',
-  description: 'Ajatuksia matkalta kauas',
+  description: 'Olen Aaro - partiolainen, lukiolainen ja tähtien tavoittelija',
   language: 'fi-fi',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',

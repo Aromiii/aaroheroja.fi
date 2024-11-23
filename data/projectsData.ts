@@ -23,7 +23,7 @@ const projectsData: Project[] = [
     href: 'https://github.com/HuHu24/huhu-sovellus',
   },
   {
-    title: 'Pestikome - Kimara2024',
+    title: 'Pestikone - Kimara2024',
     description: `Pestikone auttaa löytämään osa-alueen, joka vastaa omia vahvuuksiasi, kiinnostustasi ja intohimojasi pestiä varten Kimara 2024 leirillä. Pestikone on toteutettu OpenElectionCompass-projektin pohjalle. `,
     imgSrc: '/static/images/pestikone-kimara.png',
     href: 'https://pestikone.kimara2024.fi',

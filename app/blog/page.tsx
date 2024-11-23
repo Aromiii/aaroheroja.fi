@@ -20,11 +20,13 @@ export default function BlogPage() {
   }
 
   return (
-    <ListLayout
-      posts={posts}
-      initialDisplayPosts={initialDisplayPosts}
-      pagination={pagination}
-      title="Kaikki kirjoitukset"
-    />
+    <div className="max-w-3xl xl:max-w-5xl">
+      <ListLayout
+        posts={posts}
+        initialDisplayPosts={initialDisplayPosts}
+        pagination={pagination}
+        title="Kaikki kirjoitukset"
+      />
+    </div>
   )
 }

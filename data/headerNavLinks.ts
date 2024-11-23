@@ -1,5 +1,5 @@
 const headerNavLinks = [
-  { href: '/', title: 'Koti' },
+  { href: '/', title: 'Etusivu' },
   { href: '/blog', title: 'Kirjoitukset' },
   { href: '/tags', title: 'Tägit' },
   { href: '/projects', title: 'Projektit' },
