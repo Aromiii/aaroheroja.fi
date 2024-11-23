@@ -29,7 +29,7 @@ export default function Page({ params }: { params: { page: string } }) {
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="Kaikki kirjoitukset"
+        title="Kaikki julkaisut"
       />
     </div>
   )

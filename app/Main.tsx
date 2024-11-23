@@ -48,7 +48,7 @@ export default function Home({ posts }) {
         </div>
         <div className="flex flex-col">
           <h2 className="py-5 text-2xl font-extrabold leading-9 tracking-tight text-black dark:text-white sm:text-3xl sm:leading-10 md:text-4xl">
-            Merkityksillisimmät tehtäväni
+            Merkityksellisimmät tehtäväni
           </h2>
           <div className="h-[1px] w-full bg-gray-200 dark:bg-gray-700 "></div>
           <div className="py-5">
@@ -281,9 +281,9 @@ export default function Home({ posts }) {
           <Link
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="Kaikki kirjoitukset"
+            aria-label="Kaikki julkaisut"
           >
-            Kaikki kirjoitukset &rarr;
+            Kaikki julkaisut &rarr;
           </Link>
         </div>
       )}
