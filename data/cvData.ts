@@ -156,19 +156,19 @@ const cvData: CV = {
         {
           title: 'Hallituksen jäsen, Viestintä ja markkinointi',
           startDate: new Date(2023, 1),
-          startDate: new Date(2024, 12),
+          endDate: new Date(2024, 12),
           timeSpentPerMonth: 3,
         },
         {
           title: 'Viestintä ja markkinointijohtaja',
           startDate: new Date(2022, 11),
-          startDate: new Date(2025, 1),
+          endDate: new Date(2025, 1),
           timeSpentPerMonth: 6,
         },
         {
           title: 'Ryhmänjohtaja',
           startDate: new Date(2022, 9),
-          startDate: new Date(2024, 10),
+          endDate: new Date(2024, 10),
           timeSpentPerMonth: 10,
         },
         {
