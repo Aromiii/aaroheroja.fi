@@ -27,8 +27,14 @@ const cvData: CV = {
       companyLogoImgSrc: '/static/images/partio_sp.svg',
       positions: [
         {
+          title: 'Aluevaliokunnan jäsen, vastuualueena kasvu',
+          startDate: new Date(2025, 2),
+          timeSpentPerMonth: 8,
+        },
+        {
           title: 'Vaalitoimikunnan jäsen',
           startDate: new Date(2024, 3),
+          endDate: new Date(2024, 12),
           timeSpentPerMonth: 12,
         },
         {
@@ -95,6 +101,11 @@ const cvData: CV = {
       companyLogoImgSrc: '/static/images/partio_papa.jpg',
       positions: [
         {
+          title: 'Aluepäällikkö',
+          startDate: new Date(2025, 3),
+          timeSpentPerMonth: 5,
+        },
+        {
           title: 'Analytiikkamestari | Kimara 2024',
           startDate: new Date(2023, 11),
           endDate: new Date(2023, 8),
@@ -107,13 +118,20 @@ const cvData: CV = {
       companyLogoImgSrc: 'https://uusimaa.kuvat.fi/kansiot/LOGOT/Kokkalogo.png?img=smaller',
       positions: [
         {
+          title: 'Hautomo-ryhmän puheenjohtaja',
+          startDate: new Date(2025, 2),
+          timeSpentPerMonth: 6,
+        },
+        {
           title: 'Brändi- ja verkkosivupäällikkö | Hanki palaa -25 talvi-SM kisat',
           startDate: new Date(2024, 7),
+          endDate: new Date(2025, 2),
           timeSpentPerMonth: 2,
         },
         {
-          title: 'Hautomon jäsen',
+          title: 'Hautomo-ryhmän jäsen',
           startDate: new Date(2022, 10),
+          endDate: new Date(2025, 2),
           timeSpentPerMonth: 4,
         },
         {
@@ -138,16 +156,19 @@ const cvData: CV = {
         {
           title: 'Hallituksen jäsen, Viestintä ja markkinointi',
           startDate: new Date(2023, 1),
+          startDate: new Date(2024, 12),
           timeSpentPerMonth: 3,
         },
         {
           title: 'Viestintä ja markkinointijohtaja',
           startDate: new Date(2022, 11),
+          startDate: new Date(2025, 1),
           timeSpentPerMonth: 6,
         },
         {
           title: 'Ryhmänjohtaja',
           startDate: new Date(2022, 9),
+          startDate: new Date(2024, 10),
           timeSpentPerMonth: 10,
         },
         {
